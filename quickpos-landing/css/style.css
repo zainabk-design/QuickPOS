@@ -1,0 +1,89 @@
+/* ==================== Navbar Styles ==================== */
+#navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+#navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-blur {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Navbar link behavior */
+@media (max-width: 767px) {
+    #nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: #374151; /* gray-700 */
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.15s ease;
+}
+.nav-link:hover {
+    color: #7c3aed; /* purple-600 */
+}
+
+/* Primary CTA button */
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(90deg,#7c3aed,#5b21b6);
+    color: #fff;
+    padding: 0.45rem 0.9rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    opacity: 0.95;
+}
+
+/* Mobile menu items */
+#mobile-menu a.mobile {
+    padding: 0.5rem 0.25rem;
+}
+
+
+/* Utility classes commonly used in header layout */
+.h-16 {
+    height: 4rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.w-full {
+    width: 100%;
+}
